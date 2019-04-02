@@ -1,0 +1,14 @@
+ <h1>SIGNUP</h1>
+ <form action="/signup" method="POST">
+    <label>username</label>
+    <input type="text" name="username">
+
+    <label>password</label>
+    <input type="password" name="password">
+
+    <button type="submit">Submit</button>
+
+{{#if errorMessage}}
+  <div class="error-message">{{ errorMessage }}</div>    
+{{/if}}
+</form>
